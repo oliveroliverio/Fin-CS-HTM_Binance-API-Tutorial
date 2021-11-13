@@ -90,3 +90,21 @@ Now how to connect to websocket from favorite programming language?  He uses JS
 
 create `index.html`
 
+[JS has a websocket extension](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications)
+
+example:
+```
+var exampleSocket = new WebSocket("wss://www.example.com/socketserver", "protocolOne");
+```
+
+Add the above to script tag in `index.html`
+
+```html
+<body>
+  hello
+  <script>
+    var exampleSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
+    console.log(exampleSocket)
+  </script>
+</body>
+```
