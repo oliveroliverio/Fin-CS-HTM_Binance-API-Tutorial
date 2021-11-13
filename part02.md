@@ -108,3 +108,17 @@ Add the above to script tag in `index.html`
   </script>
 </body>
 ```
+
+So far this does nothing, need to add an onmessage function
+
+```html
+  <script>
+    var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
+
+    binanceSocket.onmessage = function(event) {
+      console.log(event.data)
+    }
+  </script>
+```
+
+now running this shows info in console window
