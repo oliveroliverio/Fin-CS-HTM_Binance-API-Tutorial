@@ -10,5 +10,14 @@ Install package
 ```
 pip install python-binance
 ```
+Sign up for binance.us
+```
+gmail, pz
+```
 
+Go to account -> Settings -> API management -> get API and Secret Key -> input in `config.py`
+
+Made a `test` one.  Make sure to make another one for live trades vs paper trades
+
+Make `getData.py` test script to make sure you can get data from api (see python-binance docs)
 *commit message:* 20211113-Python Binance Package
