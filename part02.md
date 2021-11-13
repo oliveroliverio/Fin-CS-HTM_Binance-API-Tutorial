@@ -122,3 +122,24 @@ So far this does nothing, need to add an onmessage function
 ```
 
 now running this shows info in console window
+
+Next go from console to `<div>`
+
+```html
+<body>
+  <h2>Trades</h2>
+  <div id="trades"></div>
+
+  <script>
+    var binanceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade");
+    var tradeDiv = document.getElementById("trades")
+
+    binanceSocket.onmessage = function(event) {
+      console.log(event.data)
+
+      var messageObject = JSON.parse(event.data)
+      tradeDiv.append(messageObject.p)
+    }
+  </script>
+</body>
+```
