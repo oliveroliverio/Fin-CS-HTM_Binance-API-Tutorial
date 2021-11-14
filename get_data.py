@@ -14,3 +14,4 @@ for candlestick in candles:
   print(candlestick)
 
 print(len(candles))
+# output is 500 50min candlesticks
