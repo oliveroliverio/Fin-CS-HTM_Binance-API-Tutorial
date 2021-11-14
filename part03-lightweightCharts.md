@@ -53,3 +53,4 @@ note, when you do this the `document.body` part erases everything in index.html.
 ```
 
 change `document.body` to `document.getElementById("chart")`
+Now preview HTML to see if it renders correctly.
