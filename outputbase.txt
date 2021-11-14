@@ -1,8 +1,2 @@
-python-binance
-TA-Lib
-
-TUT ba
-backtrader
-
-fae,
+flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart
 
