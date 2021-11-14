@@ -29,3 +29,9 @@ Lots of different endpoints.  But interested in market data/candlestick data (bo
 ```python
 candles = client.get_klines(symbol='BNBBTC', interval=Client.KLINE_INTERVAL_30MINUTE)
 ```
+
+[documentation for Kline output](https://binance-docs.github.io/apidocs/futures/en/#compressed-aggregate-trades-list)
+It's a list of lists with OHLC
+
+Next step, write candlestick structure information (OHLC, Unix time stamp, no of trades, etc) into a file for backtesting or other.
+[Write to CSV](https://docs.python.org/3/library/csv.html).  Note, you want to write a row

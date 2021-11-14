@@ -10,8 +10,14 @@ client = Client(config2.API_KEY, config2.API_SECRET)
 
 candles = client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_15MINUTE)
 
-for candlestick in candles:
-  print(candlestick)
+csvFile = open('15minutes.csv', 'w', newline='')
 
-print(len(candles))
+candlestick_writer = csv.writer(csvFile, delimiter=',')
+
+
+for candlestick in candles:
+  # print(candlestick)
+  candlestick_writer.writerow(candlestick)
+
+# print(len(candles))
 # output is 500 50min candlesticks
