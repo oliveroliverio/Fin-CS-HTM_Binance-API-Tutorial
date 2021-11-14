@@ -1,2 +1,2 @@
-intellipaat.com/community/9398/how-do-i-read-csv-data-into-a-record-array-in-numpy
+stackoverflow.com/questions/25614749/how-to-import-csv-file-as-numpy-array-in-python
 
