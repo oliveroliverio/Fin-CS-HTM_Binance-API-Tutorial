@@ -7,5 +7,18 @@ app = Flask(__name__)
 @app.route('/')
 
 # define functions for when the route is called into the browser
-def hello_world():
-    return 'Hello, World!'
+def index():
+    return 'index'
+
+@app.route('/buy')
+def buy():
+    return 'buy'
+
+@app.route('/sell')
+def sell():
+    return 'sell'
+
+@app.route('/settings')
+def settings():
+    return 'settings'
+
