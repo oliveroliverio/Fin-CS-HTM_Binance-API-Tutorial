@@ -136,5 +136,16 @@ Go to tradingview to see how they do it.  They have an RSI oscillator below cand
 Be interested in the settings you can configure: "Length" and "source" (open, high, low, or close).  Add this to index.HTML
 
 ```html
+<input type="checkbox" />
 <input type="text" id="rsi_strength" name="rsi_length" />
+```
+
+put everything on one line
+
+```html
+  <div id="settings">
+    <input type="checkbox" /> RSI
+    <input type="text" id="rsi_strength" name="rsi_length" placeholder="14"/>
+  </div>
+
 ```
