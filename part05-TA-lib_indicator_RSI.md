@@ -68,3 +68,28 @@ output
  67282.97 66882.09 66996.82 67103.9  67168.51 67250.42 67018.36 67079.15
  67078.72 66821.47 66815.32 66462.06 66369.3  66401.01 66487.23 66345.99
 ```
+
+This looks right.  Now apply RSI function to this numpy array
+```python
+rsi = talib.RSI(close)
+```
+
+output
+```
+(base) oliveroliverio@Olivers-MacBook-Pro Fin-CS-HTM_Binance-API-Tutorial % python ta.py
+[        nan         nan         nan         nan         nan         nan
+         nan         nan         nan         nan         nan         nan
+         nan         nan 35.05699592 31.86071302 37.87359586 42.17157418
+ 38.11954725 34.30753879 36.95334005 44.49485407 43.69180897 48.12453441
+ 44.19192807 43.13744771 39.42808959 36.84490858 42.97603989 43.12552032
+ 47.46440922 46.08195085 52.45973397 57.83926131 58.43434649 60.16698742
+ 58.6301325  61.45701018 64.51415076 58.62715039 47.31333833 52.11380634
+ 52.97913832 50.75356237 53.04599092 49.91868315 45.5389028  49.1444992
+ 52.84214812 44.82948962 47.29276892 49.55651541 50.92608577 52.68014612
+ 47.50007015 48.91710712 48.90705136 43.18724555 43.05759809 36.31406605
+ 34.7739868  35.77670969 38.5431838  35.82106586 39.40703247 43.00331324
+```
+
+Note: under 30 = oversold (looking before this you expect to see prices decreases quickly), over 30 = overbought (looking before this you expect prices to be rising quickly)
+
+Check this by getting the unix time stamp, going [here](https://unixtimestamp.com/index.php) to figure out the actual date.  Go to tradingview.com and load RSI indicator on the ticker symbol.
