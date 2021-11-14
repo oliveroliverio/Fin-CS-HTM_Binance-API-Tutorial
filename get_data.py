@@ -9,4 +9,8 @@ client = Client(config2.API_KEY, config2.API_SECRET)
 #   print(price)
 
 candles = client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_15MINUTE)
-print(candles)
+
+for candlestick in candles:
+  print(candlestick)
+
+print(len(candles))
