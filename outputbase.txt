@@ -1,2 +1,2 @@
-docs.python.org/3/library/esv.htmt
+python-binance.readthedocs.io/en/latest/market_data.html#id6
 

@@ -3,22 +3,16 @@ import config2
 import csv
 
 client = Client(config2.API_KEY, config2.API_SECRET)
-# prices = client.get_all_tickers()
-# # print(prices)
 
-# for price in prices:
-#   print(price)
+csvFile = open('2012-2020.csv', 'w', newline='')
 
-candles = client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_15MINUTE)
-
-csvFile = open('15minutes.csv', 'w', newline='')
-
+# file handler
 candlestick_writer = csv.writer(csvFile, delimiter=',')
 
+# get candlestick info from binance client
+candlesticks = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_30MINUTE, "1 Dec, 2012", "1 Jan, 2020")
 
-for candlestick in candles:
-  # print(candlestick)
+for candlestick in candlesticks:
   candlestick_writer.writerow(candlestick)
 
-# print(len(candles))
-# output is 500 50min candlesticks
+csvFile.close()
