@@ -116,3 +116,25 @@ you know what, just copy this whole example and replace chart.js.
 Make sure to modify the `document.getElementsById('chart')`
 Preview this in browser. Works.  make sure it's `getElementById` NOT `getElementsById`
 
+## Adding user input (RSI indicator)
+modify index.html
+```html
+<body>
+  <h2>Trades</h2>
+  <div id="chart"></div>
+  <div id="trades"></div>
+  <h3>Settings</h3>
+  <div id="settings">
+    <label>RSI</label>
+    <div>
+      <input type="text">
+    </div>
+  </div>
+```
+
+Go to tradingview to see how they do it.  They have an RSI oscillator below candlestick chart.  Goal is to do this now.
+Be interested in the settings you can configure: "Length" and "source" (open, high, low, or close).  Add this to index.HTML
+
+```html
+<input type="text" id="rsi_strength" name="rsi_length" />
+```
