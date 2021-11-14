@@ -24,3 +24,13 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, World!'
 ```
+
+before running, do this in terminal (this creates the environment variable)
+
+```
+export FLASK_APP=app.py
+flask run
+```
+
+After running, a small webserver built in will run.  Go to browser and type: `localhost:5000`
+When `@route('/')` is accessed on the browser, it calls function `hello_world()` . Whatever the function returns is displayed on browser.  Keep this in mind when developing flask applications.
