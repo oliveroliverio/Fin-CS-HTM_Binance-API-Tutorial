@@ -1,6 +1,6 @@
 from binance.client import Client
-import config
+import config2
 
-client = Client(API_KEY, API_SECRET)
+client = Client(config2.API_KEY, config2.API_SECRET)
 prices = client.get_all_tickers()
 print(prices)
