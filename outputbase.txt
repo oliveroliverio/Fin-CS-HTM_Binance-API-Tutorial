@@ -1,1 +1,2 @@
-wss://stream.binance. com: 9443/ws/btcusdt@trade
+python-binance.readthedocs.io/en/latest/market_data.html#id6
+

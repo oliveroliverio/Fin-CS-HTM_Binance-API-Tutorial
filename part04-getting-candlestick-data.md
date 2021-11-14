@@ -21,3 +21,11 @@ Made a `test` one.  Make sure to make another one for live trades vs paper trade
 
 Make `getData.py` test script to make sure you can get data from api (see python-binance docs)
 
+## 05:00
+Lots of different endpoints.  But interested in market data/candlestick data (both current days and historical for backtesting)
+
+[Look at the Get historical KLine function](https://python-binance.readthedocs.io/en/latest/market_data.html#id6)
+
+```python
+candles = client.get_klines(symbol='BNBBTC', interval=Client.KLINE_INTERVAL_30MINUTE)
+```
