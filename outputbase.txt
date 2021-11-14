@@ -1,2 +1,8 @@
-github.com/tradingview/lightweight-charts
+python-binance
+TA-Lib
+
+TUT ba
+backtrader
+
+fae,
 
