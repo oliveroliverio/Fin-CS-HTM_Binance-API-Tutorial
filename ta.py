@@ -4,6 +4,6 @@ import talib
 close = numpy.random.random(100)
 print(close)
 
-# uses 30 day MA by default
-moving_average = talib.SMA(close)
+# changed to 10day MA
+moving_average = talib.SMA(close, timeperiod=10)
 print(moving_average)
