@@ -1,12 +1,6 @@
 import numpy 
 import talib
+from numpy import genfromtxt
 
-close = numpy.random.random(100)
-print(close)
-
-# changed to 10day MA
-moving_average = talib.SMA(close, timeperiod=10)
-# print(moving_average)
-
-rsi = talib.RSI(close)
-print(rsi)
+my_data = genfromtxt('15minutes.csv', delimiter=',')
+print(my_data)
