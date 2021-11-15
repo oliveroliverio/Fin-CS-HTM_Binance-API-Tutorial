@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 # create new flask application, which is a flask object
 app = Flask(__name__)
@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 # define functions for when the route is called into the browser
 def index():
-    return 'index'
+    return render_template('index.html')
 
 @app.route('/buy')
 def buy():
