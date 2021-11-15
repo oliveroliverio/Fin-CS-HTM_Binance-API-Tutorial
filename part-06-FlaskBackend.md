@@ -107,4 +107,6 @@ to this:
   <div id="trades"></div>
 ```
 
-If you want to save settings to a database (like the 14 on the RSI if the user makes that a favorite).  We retrieve these values from db when the page reloads, send over to the template, then display in template, that way different users of the webapp can have different settings for their own
+If you want to save settings to a database (like the 14 on the RSI if the user makes that a favorite).  We retrieve these values from db when the page reloads, send over to the template, then display in template, that way different users of the webapp can have different settings for their own.
+
+Next we'll add logic to this template to interact with cryptocurrency data and binance api
