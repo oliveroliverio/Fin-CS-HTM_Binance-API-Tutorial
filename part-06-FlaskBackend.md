@@ -72,5 +72,38 @@ modify This
 ```
 to this
 ```html
-<script src="{{ url_for('static', filename='chart.js') }}" />
+<script src="{{ url_for('static', filename='chart.js') }}"></script>
 ```
+
+Now it'll load the chart.
+
+## Displaying variables in templates
+use the brackets: `{{ variable name }}`
+
+Say you want to change the title of application.  Modify the def function from this
+```python
+def index():
+  return render_template('index.html')
+```
+to this
+```python
+def index():
+  title = 'CoinView'
+  return render_template('index.html', title=title)
+```
+Then modify the html template from this:
+```html
+<body>
+  <h2>Trades</h2>
+  <div id="chart"></div>
+  <div id="trades"></div>
+```
+to this:
+
+```html
+<body>
+  <h2>{{ title }}</h2>
+  <div id="chart"></div>
+  <div id="trades"></div>
+```
+

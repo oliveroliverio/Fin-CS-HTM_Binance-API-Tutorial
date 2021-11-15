@@ -8,7 +8,8 @@ app = Flask(__name__)
 
 # define functions for when the route is called into the browser
 def index():
-    return render_template('index.html')
+  title = 'CoinView'
+  return render_template('index.html', title=title)
 
 @app.route('/buy')
 def buy():
