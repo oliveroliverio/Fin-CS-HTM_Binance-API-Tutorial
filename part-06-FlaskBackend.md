@@ -41,6 +41,23 @@ Modify this to return an index page
 @app.route('/')
 def index():
     return 'index'
-
 ```
 
+Add buy, sell, settings routes
+
+```python
+@app.route('/buy')
+def buy():
+    return 'buy'
+
+@app.route('/sell')
+def sell():
+    return 'sell'
+
+@app.route('/settings')
+def settings():
+    return 'settings'
+```
+
+Now we want to return HTML [jinja templates](jinja.palletsprojects.com/en/2.11.x/)
+Add the index.html file to templates folder
