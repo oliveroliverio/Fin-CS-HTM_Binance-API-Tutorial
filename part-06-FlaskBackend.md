@@ -62,3 +62,15 @@ def settings():
 Now we want to return HTML [jinja templates](jinja.palletsprojects.com/en/2.11.x/)
 Add the index.html file to templates folder, and move chart.js to static folder
 Also make a data directory
+Modified app.py to include render_template module.
+
+Note, when ran, no more chart or other stuff.  (chart.js in different location).  Look at [static files documentation](https://flask.palletsprojects.com/en/1.1.x/quickstart/#static-files)
+
+modify This
+```html
+ <script src='chart.js'></script>
+```
+to this
+```html
+<script src="{{ url_for('static', filename='chart.js') }}" />
+```

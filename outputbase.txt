@@ -1,2 +1,2 @@
-jinja.palletsprojects.com/en/2.11.x/
+flask.palletsprojects.com/en/1.1.x/quickstart/#static-files
 
