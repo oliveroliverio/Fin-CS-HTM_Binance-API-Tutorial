@@ -61,3 +61,4 @@ def settings():
 
 Now we want to return HTML [jinja templates](jinja.palletsprojects.com/en/2.11.x/)
 Add the index.html file to templates folder, and move chart.js to static folder
+Also make a data directory
